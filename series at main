@@ -1,0 +1,10 @@
+import math
+
+def factorial_series_sum(N):
+    total_sum = 0
+    for i in range(1, N + 1):
+        total_sum += math.factorial(i) / i
+    return total_sum
+N = 5
+result = factorial_series_sum(N)
+print(f"Sum = {result}")
